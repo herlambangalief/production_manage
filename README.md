@@ -1,7 +1,7 @@
 ## Introduction ##  
 Laravel production management system  
 Created using laravel 10 and php 8.2  
-
+Database using PostgreSQL  
 
 ## Installation ##  
  1.extract if you use compressed format like ZIP or RAR  
