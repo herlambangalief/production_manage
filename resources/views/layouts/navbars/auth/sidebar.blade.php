@@ -3,8 +3,8 @@
   <div class="sidenav-header">
     <i class="fas fa-times p-3 cursor-pointer text-secondary opacity-5 position-absolute end-0 top-0 d-none d-xl-none" aria-hidden="true" id="iconSidenav"></i>
     <a class="align-items-center d-flex m-0 navbar-brand text-wrap" href="{{ route('dashboard') }}">
-        <img src="../assets/img/logos.png" class="navbar-brand-img h-100" alt="...">
-        <span class="ms-3 font-weight-bold">OAE Manufacture Indonesia</span>
+       
+        <span class="ms-3 font-weight-bold">Production Management</span>
     </a>
   </div>
   <hr class="horizontal dark mt-0">
@@ -42,14 +42,14 @@
       <li class="nav-item mt-2">
         <h6 class="ps-4 ms-2 text-uppercase text-xs font-weight-bolder opacity-6">Management</h6>
       </li>
-      <li class="nav-item">
+      <!-- <li class="nav-item">
         <a class="nav-link {{ (Request::is('delivery') ? 'active' : '') }} " href="{{ url('delivery') }}">
             <div class="icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
                 <i class="fa fa-truck"></i>
             </div>
             <span class="nav-link-text ms-1">Delivery</span>
         </a>
-      </li>
+      </li> -->
       <li class="nav-item">
         <a class="nav-link {{ (Request::is('laporan') ? 'active' : '') }} " href="{{ url('laporan') }}">
             <div class="icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
@@ -86,18 +86,18 @@
         </a>
       </li>
       @if(auth()->user()->position=='superadmin' || auth()->user()->position=='admin' || auth()->user()->position=='owner')
-      <li class="nav-item">
+      <!-- <li class="nav-item">
         <a class="nav-link {{ (Request::is('finish') ? 'active' : '') }}" href="{{ url('finish') }}">
           <div class=" icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
             <i class="fa fa-check-circle"></i>
           </div>
           <span class="nav-link-text ms-1">Finish Good</span>
         </a>
-      </li>
+      </li> -->
       <li class="nav-item mt-2">
         <h6 class="ps-4 ms-2 text-uppercase text-xs font-weight-bolder opacity-6">Data</h6>
       </li>
-      <li class="nav-item">
+      <!-- <li class="nav-item">
         <a class="nav-link {{ (Request::is('target') ? 'active' : '') }} " href="{{ url('target') }}">
             <div class="icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
                 <i class="fa fa-crosshairs"></i>
@@ -112,7 +112,7 @@
           </div>
           <span class="nav-link-text ms-1">Not Good</span>
         </a>
-      </li>
+      </li> -->
       <li class="nav-item">
         <a class="nav-link {{ (Request::is('operator') ? 'active' : '') }} " href="{{ url('operator') }}">
             <div class="icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
